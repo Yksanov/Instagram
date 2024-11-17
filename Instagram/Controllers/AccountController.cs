@@ -122,6 +122,6 @@ public class AccountController : Controller
     public async Task<IActionResult> LogOut()
     {
         await _signInManager.SignOutAsync();
-        return RedirectToAction("Index");
+        return RedirectToAction("Index");  // надо изменить
     }
 }
